@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentor-Mentee Matching</title>
+</head>
+<body>
+    <h1>Upload Mentee and Mentor Files</h1>
+    <form action="{{ url_for('upload_file') }}" method="post" enctype="multipart/form-data">
+        <label for="mentees">Upload Mentee CSV:</label>
+        <input type="file" name="mentees" required><br><br>
+        <label for="mentors">Upload Mentor CSV:</label>
+        <input type="file" name="mentors" required><br><br>
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matching Results</title>
+</head>
+<body>
+    <h1>Mentor-Mentee Pairs</h1>
+    <ul>
+        {% for mentee, mentor in pairs %}
+            <li>{{ mentee }} -> {{ mentor }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('index') }}">Go Back</a>
+</body>
+</html>
